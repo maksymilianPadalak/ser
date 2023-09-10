@@ -7,7 +7,5 @@ type HeaderProps = {
 };
 
 export const Heading: FC<HeaderProps> = ({ text, className }) => (
-  <h1 className={cx("font-serif text-8xl my-12 text-black", className)}>
-    {text}
-  </h1>
+  <h1 className={cx("font-serif text-8xl text-black", className)}>{text}</h1>
 );

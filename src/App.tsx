@@ -1,10 +1,10 @@
 import "./App.css";
 import { FC } from "react";
-import { Heading } from "./atoms/Heading.tsx";
+import { HeadingWithText } from "./molecules/HeadingWithText.tsx";
 
 const App: FC = () => (
-  <div className={"h-screen flex justify-center bg-yellow-400"}>
-    <Heading text={"Ser"} />
+  <div className={"h-screen flex flex-col items-center bg-yellow-400"}>
+    <HeadingWithText heading={"Ser"} text={"hmmm?"} />
   </div>
 );
 
