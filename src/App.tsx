@@ -1,11 +1,11 @@
 import "./App.css";
 import { FC } from "react";
-import { HeadingWithText } from "./molecules/HeadingWithText.tsx";
-import { Clock } from "./atoms/Clock.tsx";
+import { HeadingWithText } from "./ui/molecules/HeadingWithText.tsx";
+import { CountdownClock } from "./ui/organisms/CountdownClock.tsx";
 
 const App: FC = () => (
   <div className={"h-screen flex flex-col items-center bg-yellow-400"}>
-    <Clock />
+    <CountdownClock />
     <HeadingWithText heading={"Ser"} text={"hmmm?"} />
   </div>
 );
