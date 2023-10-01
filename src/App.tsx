@@ -1,4 +1,3 @@
-import "./App.css";
 import { FC } from "react";
 import { HeadingWithText } from "@/ui/molecules/HeadingWithText";
 import { CountdownClock } from "@/ui/organisms/CountdownClock";
