@@ -1,14 +1,19 @@
 import { FC } from "react";
 import { useCountdown } from "../../hooks/useCountdown.tsx";
 import { ClockDigitWithLabel } from "../molecules/ClockDigitWithLabel.tsx";
+import cx from "classnames";
 
-export const CountdownClock: FC = () => {
+type CountdownClock = {
+  className?: string;
+};
+
+export const CountdownClock: FC<CountdownClock> = ({ className }) => {
   const { days, hours, minutes, seconds } = useCountdown(
     new Date("2024-10-10"),
   );
 
   return (
-    <div className="flex">
+    <div className={cx("flex", className)}>
       <ClockDigitWithLabel digit={days} label={"days"} className={"mx-2"} />
       <ClockDigitWithLabel digit={hours} label={"hour"} className={"mx-2"} />
       <ClockDigitWithLabel
