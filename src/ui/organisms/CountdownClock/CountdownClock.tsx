@@ -5,10 +5,15 @@ import cx from "classnames";
 import { capitalizeFirstLetter } from "@/utils/capitalizeFirstLetter";
 import { ComponentWithClassNameProps } from "@/globalTypes";
 
-export const CountdownClock: FC<ComponentWithClassNameProps> = ({
+export type CountdownClockProps = {
+  targetDate: Date;
+} & ComponentWithClassNameProps;
+
+export const CountdownClock: FC<CountdownClockProps> = ({
+  targetDate,
   className,
 }) => {
-  const timeValues = useCountdown(new Date("2023-10-2"));
+  const timeValues = useCountdown(targetDate);
 
   return (
     <div className={cx("grid grid-cols-4 gap-4 lg:gap-20", className)}>

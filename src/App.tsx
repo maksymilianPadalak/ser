@@ -5,7 +5,7 @@ import { CountdownClock } from "@/ui/organisms/CountdownClock";
 const App: FC = () => (
   <div className={"h-screen flex flex-col items-center bg-yellow-400"}>
     <HeadingWithText heading={"Ser"} text={"hmmm?"} />
-    <CountdownClock className={"mt-20"} />
+    <CountdownClock className={"mt-20"} targetDate={new Date("2023-10-2")} />
   </div>
 );
 
