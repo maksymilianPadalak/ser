@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { useCountdown } from "@/hooks/useCountdown.tsx";
+import { useCountdown } from "@/hooks/useCountdown";
 import { ClockDigitWithLabel } from "@/ui/molecules/ClockDigitWithLabel";
 import cx from "classnames";
 import { capitalizeFirstLetter } from "@/utils/capitalizeFirstLetter";
