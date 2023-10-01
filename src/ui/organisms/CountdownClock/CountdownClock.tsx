@@ -8,10 +8,10 @@ import { ComponentWithClassNameProps } from "../../../globalTypes/ComponentWithC
 export const CountdownClock: FC<ComponentWithClassNameProps> = ({
   className,
 }) => {
-  const timeValues = useCountdown(new Date("2024-10-10"));
+  const timeValues = useCountdown(new Date("2023-10-2"));
 
   return (
-    <div className={cx("grid grid-cols-4 gap-20", className)}>
+    <div className={cx("grid grid-cols-4 gap-4 lg:gap-20", className)}>
       {Object.entries(timeValues).map(([key, value], index) => (
         <ClockDigitWithLabel
           key={index}

@@ -16,7 +16,7 @@ export const ClockDigitWithLabel: FC<ClockDigitWithLabelProps> = ({
 }) => {
   return (
     <div className={cx(className, "flex flex-col justify-center items-center")}>
-      <Text text={label} className={"mb-6"} />
+      <Text text={label} className={"mb-2 lg:mb-6"} />
       <ClockDigit digit={digit} className={"w-full"} />
     </div>
   );

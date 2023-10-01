@@ -10,7 +10,7 @@ export const ClockDigit: FC<ClockDigitProps> = ({ digit, className }) => {
   return (
     <div
       className={cx(
-        "text-5xl p-8 flex justify-center bg-black text-white border-4 rounded-full",
+        "text-xl lg:text-5xl p-6 lg:p-8 flex justify-center items-center bg-black text-white border-2 lg:border-4 rounded-full h-10 w-10 lg:h-32 lg:w-32",
         className,
       )}
     >
