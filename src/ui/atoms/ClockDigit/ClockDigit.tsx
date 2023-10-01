@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { ComponentWithClassNameProps } from "../../globalTypes/ComponentWithClassNameProps.ts";
+import { ComponentWithClassNameProps } from "@/globalTypes/ComponentWithClassNameProps.ts";
 import cx from "classnames";
 
 type ClockDigitProps = {

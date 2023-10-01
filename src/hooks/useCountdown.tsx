@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { TimeUnits } from "../ui/organisms/CountdownClock/enums.ts";
+import { TimeUnits } from "@/ui/organisms/CountdownClock";
 
 type ClockValues = Record<TimeUnits, number>;
 

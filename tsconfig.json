@@ -18,7 +18,17 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    /* Import aliases */
+    "paths": {
+      "@": ["./src"],
+      "@/*": ["./src/*"],
+      "@atoms": ["./src/ui/atoms"],
+      "@molecules": ["./src/ui/molecules"],
+      "@organisms": ["./src/ui/organisms"],
+      "@hooks": ["./src/hooks"]
+    }
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]

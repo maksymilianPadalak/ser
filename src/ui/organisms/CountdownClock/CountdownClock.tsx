@@ -1,9 +1,9 @@
 import { FC } from "react";
-import { useCountdown } from "../../../hooks/useCountdown.tsx";
-import { ClockDigitWithLabel } from "../../molecules/ClockDigitWithLabel.tsx";
+import { useCountdown } from "@/hooks/useCountdown.tsx";
+import { ClockDigitWithLabel } from "@/ui/molecules/ClockDigitWithLabel";
 import cx from "classnames";
-import { capitalizeFirstLetter } from "../../../utils/capitalizeFirstLetter.ts";
-import { ComponentWithClassNameProps } from "../../../globalTypes/ComponentWithClassNameProps.ts";
+import { capitalizeFirstLetter } from "@/utils/capitalizeFirstLetter.ts";
+import { ComponentWithClassNameProps } from "@/globalTypes/ComponentWithClassNameProps.ts";
 
 export const CountdownClock: FC<ComponentWithClassNameProps> = ({
   className,

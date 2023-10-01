@@ -1,8 +1,8 @@
 import { FC } from "react";
-import { ClockDigit } from "../atoms/ClockDigit.tsx";
-import { Text } from "../atoms/Text.tsx";
+import { Text } from "@/ui/atoms/Text";
 import cx from "classnames";
-import { ComponentWithClassNameProps } from "../../globalTypes/ComponentWithClassNameProps.ts";
+import { ComponentWithClassNameProps } from "@/globalTypes/ComponentWithClassNameProps.ts";
+import { ClockDigit } from "@/ui/atoms/ClockDigit";
 
 type ClockDigitWithLabelProps = {
   digit: number;

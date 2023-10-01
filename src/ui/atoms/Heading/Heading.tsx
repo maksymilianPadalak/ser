@@ -1,6 +1,6 @@
 import { FC } from "react";
 import cx from "classnames";
-import { ComponentWithClassNameProps } from "../../globalTypes/ComponentWithClassNameProps.ts";
+import { ComponentWithClassNameProps } from "@/globalTypes/ComponentWithClassNameProps.ts";
 
 type HeaderProps = {
   text: string;

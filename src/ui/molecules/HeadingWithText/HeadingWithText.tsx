@@ -1,8 +1,8 @@
 import { FC } from "react";
-import { Heading } from "../atoms/Heading.tsx";
-import { Text } from "../atoms/Text.tsx";
+import { Heading } from "@/ui/atoms/Heading";
+import { Text } from "@/ui/atoms/Text";
 
-export type HeadingWithTextProps = {
+type HeadingWithTextProps = {
   heading: string;
   text: string;
 };
