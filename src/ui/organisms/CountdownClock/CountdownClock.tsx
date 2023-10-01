@@ -3,12 +3,11 @@ import { useCountdown } from "../../../hooks/useCountdown.tsx";
 import { ClockDigitWithLabel } from "../../molecules/ClockDigitWithLabel.tsx";
 import cx from "classnames";
 import { capitalizeFirstLetter } from "../../../utils/capitalizeFirstLetter.ts";
+import { ComponentWithClassNameProps } from "../../../globalTypes/ComponentWithClassNameProps.ts";
 
-type CountdownClock = {
-  className?: string;
-};
-
-export const CountdownClock: FC<CountdownClock> = ({ className }) => {
+export const CountdownClock: FC<ComponentWithClassNameProps> = ({
+  className,
+}) => {
   const timeValues = useCountdown(new Date("2024-10-10"));
 
   return (
