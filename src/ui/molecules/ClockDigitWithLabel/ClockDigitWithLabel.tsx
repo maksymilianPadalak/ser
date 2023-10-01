@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { Text } from "@/ui/atoms/Text";
 import cx from "classnames";
-import { ComponentWithClassNameProps } from "@/globalTypes/ComponentWithClassNameProps.ts";
+import { ComponentWithClassNameProps } from "@/globalTypes";
 import { ClockDigit } from "@/ui/atoms/ClockDigit";
 
 type ClockDigitWithLabelProps = {
