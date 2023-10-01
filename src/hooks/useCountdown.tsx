@@ -1,11 +1,7 @@
 import { useEffect, useState } from "react";
+import { TimeUnits } from "../ui/organisms/CountdownClock/enums.ts";
 
-export type ClockValues = {
-  days: number;
-  hours: number;
-  minutes: number;
-  seconds: number;
-};
+export type ClockValues = Record<TimeUnits, number>;
 
 export const useCountdown = (targetDate: Date) => {
   const countDownDate = new Date(targetDate).getTime();
