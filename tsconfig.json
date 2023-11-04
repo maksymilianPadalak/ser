@@ -28,7 +28,9 @@
       "@atoms": ["./src/ui/atoms"],
       "@molecules": ["./src/ui/molecules"],
       "@organisms": ["./src/ui/organisms"],
-      "@hooks": ["./src/hooks"]
+      "@hooks": ["./src/hooks"],
+      "@assets": ["./public/assets"],
+
     }
   },
   "include": ["src"],

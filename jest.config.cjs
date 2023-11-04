@@ -12,6 +12,7 @@ module.exports = {
     '^@molecules/(.*)$': '<rootDir>/src/ui/molecules/\$1',
     '^@organisms/(.*)$': '<rootDir>/src/ui/organisms/\$1',
     '^@hooks/(.*)$': '<rootDir>/src/hooks/\$1',
+    '^@assets/(.*)$': '<rootDir>/public/assets/\$1',
   },
   preset: 'ts-jest',
 };
