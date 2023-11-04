@@ -7,5 +7,12 @@ type HeaderProps = {
 } & ComponentWithClassNameProps;
 
 export const Heading: FC<HeaderProps> = ({ text, className }) => (
-  <h1 className={cx("font-serif text-8xl text-black", className)}>{text}</h1>
+  <h1
+    className={cx(
+      "font-serif text-3xl md:text-5xl lg:text-8xl text-black",
+      className,
+    )}
+  >
+    {text}
+  </h1>
 );
