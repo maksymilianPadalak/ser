@@ -1,6 +1,11 @@
 import { FC } from "react";
-import TheImage from "@assets/images/sir-and-mouse.webp";
+import { ComponentWithClassNameProps } from "@/globalTypes";
 
-const Image: FC = () => <img src={TheImage} />;
+type ImageProps = {
+  src: string;
+  alt: string;
+} & ComponentWithClassNameProps;
+
+const Image: FC<ImageProps> = ({ src, alt }) => <img src={src} alt={alt} />;
 
 export default Image;
