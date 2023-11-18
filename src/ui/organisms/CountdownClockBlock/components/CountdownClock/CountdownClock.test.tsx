@@ -1,8 +1,8 @@
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import { CountdownClock } from "./CountdownClock.tsx";
-import { TimeUnits } from "@/ui/organisms/CountdownClock/enums.ts";
 import { capitalizeFirstLetter } from "@/utils/capitalizeFirstLetter";
+import { TimeUnits } from "@/ui/organisms/CountdownClockBlock/components/CountdownClock/enums.ts";
 
 describe("CountdownClock", () => {
   const date = new Date("2020-01-01");
