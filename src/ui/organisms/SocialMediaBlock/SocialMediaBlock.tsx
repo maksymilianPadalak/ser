@@ -1,6 +1,5 @@
 import { FC } from "react";
 import { ComponentWithClassNameProps } from "@/globalTypes";
-import cx from "classnames";
 import Image from "@/ui/atoms/Image/Image.tsx";
 import { HeadingWithText } from "@/ui/molecules/HeadingWithText";
 
@@ -23,14 +22,14 @@ export const SocialMediaBlock: FC<SocialMediaBlockProps> = ({
   const images: string[] = [image1, image2, image3];
 
   return (
-    <div>
+    <div className={className}>
       <HeadingWithText
         heading={title}
         text={description}
         textClassName={"text-4xl"}
         className={"flex justify-center my-5"}
       />
-      <div className={cx("grid grid-cols-12", className)}>
+      <div className={"grid grid-cols-12"}>
         {images.map((imageSrc) => (
           <div className={"col-span-4 m-10"}>
             <Image src={imageSrc} alt={"instagram"} />

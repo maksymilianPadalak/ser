@@ -5,6 +5,8 @@ import { VideoTextBlock } from "@/ui/organisms/VideoTextBlock";
 import SirCommercialVideo from "@assets/videos/sir-commercial.mp4";
 import { SocialMediaBlock } from "@/ui/organisms/SocialMediaBlock";
 import InstagramImage from "@assets/images/instagram.webp";
+import Mouse from "@assets/images/mouse.webp";
+import { CountdownClockBlock } from "@/ui/organisms/CountdownClockBlock/CountdownClockBlock.tsx";
 
 const App: FC = () => (
   <div className={"bg-yellow-400 flex flex-col justify-center"}>
@@ -20,12 +22,17 @@ const App: FC = () => (
       videoThumbnail={SirWithMouseImage}
     />
     <SocialMediaBlock
-      className={"bg-yellow-400"}
       title={"Pa kurwa"}
       description={"Instagram kurwa"}
       image1={InstagramImage}
       image2={InstagramImage}
       image3={InstagramImage}
+    />
+    <CountdownClockBlock
+      className={"bg-black"}
+      title={"Szybko kurwa"}
+      clockTitle={"Czas do konca kurwa licytacji"}
+      image={Mouse}
     />
   </div>
 );

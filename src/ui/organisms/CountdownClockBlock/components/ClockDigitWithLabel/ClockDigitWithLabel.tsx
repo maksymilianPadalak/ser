@@ -2,7 +2,7 @@ import { FC } from "react";
 import { Text } from "@/ui/atoms/Text";
 import cx from "classnames";
 import { ComponentWithClassNameProps } from "@/globalTypes";
-import { ClockDigit } from "@/ui/atoms/ClockDigit";
+import { ClockDigit } from "../ClockDigit/ClockDigit.tsx";
 
 type ClockDigitWithLabelProps = {
   digit: number;
@@ -16,7 +16,7 @@ export const ClockDigitWithLabel: FC<ClockDigitWithLabelProps> = ({
 }) => {
   return (
     <div className={cx(className, "flex flex-col justify-center items-center")}>
-      <Text text={label} className={"mb-2 lg:mb-6"} />
+      <Text text={label} className={"mb-6 text-white"} />
       <ClockDigit digit={digit} />
     </div>
   );
