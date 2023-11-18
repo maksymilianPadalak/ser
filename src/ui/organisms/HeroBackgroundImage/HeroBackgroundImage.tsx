@@ -1,15 +1,17 @@
 import { FC } from "react";
-import { Heading } from "@/ui/atoms/Heading";
 import { ComponentWithClassNameProps } from "@/globalTypes";
 import cx from "classnames";
+import { DetailsBlock } from "@/ui/organisms/HeroBackgroundImage/components/DetailsBlock/DetailsBlock.tsx";
 
 type HeroBackgroundImageProps = {
   title: string;
+  description: string;
   imageUrl: string;
 } & ComponentWithClassNameProps;
 
 export const HeroBackgroundImage: FC<HeroBackgroundImageProps> = ({
   title,
+  description,
   imageUrl,
   className,
 }) => (
@@ -22,6 +24,6 @@ export const HeroBackgroundImage: FC<HeroBackgroundImageProps> = ({
       backgroundImage: `url(${imageUrl})`,
     }}
   >
-    <Heading text={title} />
+    <DetailsBlock title={title} description={description} className={"w-1/2"} />
   </div>
 );
