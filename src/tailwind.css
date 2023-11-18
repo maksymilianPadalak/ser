@@ -3,5 +3,7 @@
 @import 'tailwindcss/utilities';
 
 html {
-    background: #facc15;
+    --main-background-color: #facc15;
+
+    background: var(--main-background-color);
 }
