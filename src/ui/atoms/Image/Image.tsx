@@ -6,6 +6,8 @@ type ImageProps = {
   alt: string;
 } & ComponentWithClassNameProps;
 
-const Image: FC<ImageProps> = ({ src, alt }) => <img src={src} alt={alt} />;
+const Image: FC<ImageProps> = ({ src, alt, className }) => (
+  <img src={src} alt={alt} className={className} />
+);
 
 export default Image;
