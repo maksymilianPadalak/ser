@@ -12,6 +12,7 @@ const App: FC = () => (
       imageUrl={SirWithMouseImage}
     />
     <VideoTextBlock
+      className={"bg-black"}
       title={"Reklama sera czeka na Ciebie"}
       videoSrc={SirCommercialVideo}
       videoThumbnail={SirWithMouseImage}
