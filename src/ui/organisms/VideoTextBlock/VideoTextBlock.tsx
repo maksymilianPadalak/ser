@@ -5,11 +5,13 @@ import { Text } from "@/ui/atoms/Text";
 type VideoTextBlockProps = {
   title: string;
   videoSrc: string;
+  videoThumbnail: string;
 };
 
 export const VideoTextBlock: FC<VideoTextBlockProps> = ({
   title,
   videoSrc,
+  videoThumbnail,
 }) => {
   return (
     <div className={"grid grid-cols-12 bg-black"}>
@@ -17,7 +19,7 @@ export const VideoTextBlock: FC<VideoTextBlockProps> = ({
         <Text text={title} className={"text-white text-5xl"} />
       </div>
       <div className={"col-span-6"}>
-        <Video src={videoSrc} className={"p-10"} />
+        <Video src={videoSrc} className={"p-10"} thumbnail={videoThumbnail} />
       </div>
     </div>
   );
