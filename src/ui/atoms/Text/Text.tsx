@@ -7,5 +7,5 @@ type TextProps = {
 } & ComponentWithClassNameProps;
 
 export const Text: FC<TextProps> = ({ text, className }) => (
-  <h1 className={cx("font-sans text-lg text-black", className)}>{text}</h1>
+  <h1 className={cx("font-sans text-black", className)}>{text}</h1>
 );

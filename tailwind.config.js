@@ -2,7 +2,14 @@
 export default {
   content: ["src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    fontFamily: {
+      sans: ["Suez One"],
+    },
+    extend: {
+      spacing: {
+        700: "700px",
+      },
+    },
   },
   plugins: [],
 };

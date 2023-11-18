@@ -24,6 +24,6 @@ export const HeroBackgroundImage: FC<HeroBackgroundImageProps> = ({
       backgroundImage: `url(${imageUrl})`,
     }}
   >
-    <DetailsBlock title={title} description={description} className={"w-1/2"} />
+    <DetailsBlock title={title} description={description} className={"w-700"} />
   </div>
 );

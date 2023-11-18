@@ -16,10 +16,12 @@ export const DetailsBlock: FC<DetailsBlockProps> = ({
     <DetailsSection
       text={title}
       className={"bg-yellow-400 flex justify-center"}
+      textClassName={"text-8xl text-white"}
     />
     <DetailsSection
       text={description}
-      textClassName={"text-white text-center"}
+      className={"bg-white"}
+      textClassName={"text-3xl text-yellow-400 text-center"}
     />
   </div>
 );

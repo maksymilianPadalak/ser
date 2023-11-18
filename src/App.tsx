@@ -5,7 +5,7 @@ import { HeroBackgroundImage } from "@/ui/organisms/HeroBackgroundImage";
 const App: FC = () => (
   <div className={"bg-yellow-400 flex justify-center"}>
     <HeroBackgroundImage
-      title={"Dupa"}
+      title={"Twój ser zasługuje na tytuł szlachecki"}
       description={"To jest kurwa ser"}
       imageUrl={SirWithMouseImage}
     />
