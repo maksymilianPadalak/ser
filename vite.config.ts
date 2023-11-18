@@ -12,7 +12,7 @@ export default defineConfig({
       "@molecules": path.resolve(__dirname, "./src/ui/molecules"),
       "@organisms": path.resolve(__dirname, "./src/ui/organisms"),
       "@hooks": path.resolve(__dirname, "./src/hooks"),
-      "@assets": path.resolve(__dirname, "./public/assets"),
+      "@assets": path.resolve(__dirname, "./src/assets"),
     },
   },
 });

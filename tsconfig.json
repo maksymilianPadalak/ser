@@ -29,7 +29,7 @@
       "@molecules": ["./src/ui/molecules"],
       "@organisms": ["./src/ui/organisms"],
       "@hooks": ["./src/hooks"],
-      "@assets": ["./public/assets"],
+      "@assets": ["./src/assets"],
 
     }
   },
