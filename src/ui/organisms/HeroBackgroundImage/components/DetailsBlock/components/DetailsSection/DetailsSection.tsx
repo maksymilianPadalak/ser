@@ -14,6 +14,6 @@ export const DetailsSection: FC<DetailsSectionProps> = ({
   className,
 }) => (
   <div className={cx("bg-black flex justify-center", className)}>
-    <Text text={text} className={cx("p-14 text-center", textClassName)} />
+    <Text text={text} className={cx("p-6 text-center", textClassName)} />
   </div>
 );

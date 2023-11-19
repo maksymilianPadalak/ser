@@ -4,6 +4,7 @@ import { HeroBackgroundImage } from "@/ui/organisms/HeroBackgroundImage";
 import { VideoTextBlock } from "@/ui/organisms/VideoTextBlock";
 import SirCommercialVideo from "@assets/videos/sir-commercial.mp4";
 import { SocialMediaBlock } from "@/ui/organisms/SocialMediaBlock";
+import Sir from "@assets/images/sir.webp";
 import InstagramImage from "@assets/images/instagram.webp";
 import Mouse from "@assets/images/mouse.webp";
 import { CountdownClockBlock } from "@/ui/organisms/CountdownClockBlock/CountdownClockBlock.tsx";
@@ -13,7 +14,7 @@ const App: FC = () => (
     <HeroBackgroundImage
       title={"Twój ser zasługuje na tytuł szlachecki"}
       description={"To jest kurwa ser"}
-      imageUrl={SirWithMouseImage}
+      imageUrl={Sir}
     />
     <VideoTextBlock
       className={"bg-black"}

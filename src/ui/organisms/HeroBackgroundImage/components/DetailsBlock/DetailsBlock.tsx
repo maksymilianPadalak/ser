@@ -16,7 +16,7 @@ export const DetailsBlock: FC<DetailsBlockProps> = ({
     <DetailsSection
       text={title}
       className={"bg-yellow-400 flex justify-center"}
-      textClassName={"text-8xl text-white"}
+      textClassName={"text-5xl text-white"}
     />
     <DetailsSection
       text={description}

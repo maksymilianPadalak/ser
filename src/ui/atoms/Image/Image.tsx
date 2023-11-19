@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { ComponentWithClassNameProps } from "@/globalTypes";
 
+// TODO export Image props to separate type
 type ImageProps = {
   src: string;
   alt: string;
