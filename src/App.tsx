@@ -8,9 +8,15 @@ import Sir from "@assets/images/sir.webp";
 import InstagramImage from "@assets/images/instagram.webp";
 import Mouse from "@assets/images/mouse.webp";
 import { CountdownClockBlock } from "@/ui/organisms/CountdownClockBlock/CountdownClockBlock.tsx";
+import CheeseLoop from "@assets/videos/cheese-loop.mp4";
+import { HeroBackgroundVideo } from "@/ui/organisms/HeroBackgroundVideo";
 
 const App: FC = () => (
-  <div className={"bg-yellow-400 flex flex-col justify-center"}>
+  <div>
+    <HeroBackgroundVideo
+      title={"Ogarnij se kurwa reklame serka"}
+      videoUrl={CheeseLoop}
+    />
     <HeroImage
       title={"Twój ser zasługuje na tytuł szlachecki"}
       description={"To jest kurwa ser"}
