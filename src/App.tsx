@@ -1,6 +1,6 @@
 import { FC } from "react";
 import SirWithMouseImage from "@assets/images/sir-and-mouse.webp";
-import { HeroBackgroundImage } from "@/ui/organisms/HeroBackgroundImage";
+import { HeroImage } from "@/ui/organisms/HeroImage";
 import { VideoTextBlock } from "@/ui/organisms/VideoTextBlock";
 import SirCommercialVideo from "@assets/videos/sir-commercial.mp4";
 import { SocialMediaBlock } from "@/ui/organisms/SocialMediaBlock";
@@ -11,7 +11,7 @@ import { CountdownClockBlock } from "@/ui/organisms/CountdownClockBlock/Countdow
 
 const App: FC = () => (
   <div className={"bg-yellow-400 flex flex-col justify-center"}>
-    <HeroBackgroundImage
+    <HeroImage
       title={"Twój ser zasługuje na tytuł szlachecki"}
       description={"To jest kurwa ser"}
       imageUrl={Sir}

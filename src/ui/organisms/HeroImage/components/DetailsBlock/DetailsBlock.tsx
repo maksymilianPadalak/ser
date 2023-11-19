@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { ComponentWithClassNameProps } from "@/globalTypes";
-import { DetailsSection } from "@/ui/organisms/HeroBackgroundImage/components/DetailsBlock/components/DetailsSection/DetailsSection.tsx";
+import { DetailsSection } from "./components/DetailsSection/DetailsSection.tsx";
 
 type DetailsBlockProps = {
   title: string;

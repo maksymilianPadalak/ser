@@ -1,8 +1,8 @@
 import { FC } from "react";
 import { ComponentWithClassNameProps } from "@/globalTypes";
-import { DetailsBlock } from "@/ui/organisms/HeroBackgroundImage/components/DetailsBlock/DetailsBlock.tsx";
 import cx from "classnames";
 import Image from "@/ui/atoms/Image/Image.tsx";
+import { DetailsBlock } from "./components/DetailsBlock/DetailsBlock.tsx";
 
 type HeroBackgroundImageProps = {
   title: string;
@@ -10,7 +10,7 @@ type HeroBackgroundImageProps = {
   imageUrl: string;
 } & ComponentWithClassNameProps;
 
-export const HeroBackgroundImage: FC<HeroBackgroundImageProps> = ({
+export const HeroImage: FC<HeroBackgroundImageProps> = ({
   title,
   description,
   imageUrl,
