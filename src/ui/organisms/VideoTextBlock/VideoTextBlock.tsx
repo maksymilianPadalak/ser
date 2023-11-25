@@ -18,11 +18,20 @@ export const VideoTextBlock: FC<VideoTextBlockProps> = ({
 }) => {
   return (
     <div className={cx("grid grid-cols-12", className)}>
-      <div className={"col-span-6 flex justify-center items-center"}>
-        <Text text={title} className={"text-white text-5xl"} />
+      <div
+        className={"flex col-span-12 xl:col-span-6 justify-center items-center"}
+      >
+        <Text
+          text={title}
+          className={"text-white text-center text-3xl py-5 xl:text-5xl"}
+        />
       </div>
-      <div className={"col-span-6"}>
-        <Video src={videoSrc} className={"p-10"} thumbnail={videoThumbnail} />
+      <div className={"col-span-12 xl:col-span-6"}>
+        <Video
+          src={videoSrc}
+          className={"xl:p-10"}
+          thumbnail={videoThumbnail}
+        />
       </div>
     </div>
   );
