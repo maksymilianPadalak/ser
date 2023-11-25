@@ -6,10 +6,14 @@ import SirCommercialVideo from "@assets/videos/sir-commercial.mp4";
 import { SocialMediaBlock } from "@/ui/organisms/SocialMediaBlock";
 import Sir from "@assets/images/sir.webp";
 import InstagramImage from "@assets/images/instagram.webp";
+import Replace from "@assets/images/replace.webp";
+import Replace2 from "@assets/images/replace2.webp";
+
 import Mouse from "@assets/images/mouse.webp";
 import { CountdownClockBlock } from "@/ui/organisms/CountdownClockBlock/CountdownClockBlock.tsx";
 import CheeseLoop from "@assets/videos/cheese-loop.mp4";
 import { HeroBackgroundVideo } from "@/ui/organisms/HeroBackgroundVideo";
+import { TwoImageHero } from "@/ui/organisms/TwoImageHero";
 
 const App: FC = () => (
   <div>
@@ -34,6 +38,12 @@ const App: FC = () => (
       image1={InstagramImage}
       image2={InstagramImage}
       image3={InstagramImage}
+    />
+    <TwoImageHero
+      image1={Replace}
+      image2={Replace2}
+      className={"bg-black"}
+      title={"Podmień na swoje i gotowe"}
     />
     <CountdownClockBlock
       className={"bg-black"}

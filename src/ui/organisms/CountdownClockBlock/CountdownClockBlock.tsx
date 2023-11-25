@@ -20,7 +20,7 @@ export const CountdownClockBlock: FC<CountdownClockBlockProps> = ({
     <div className={className}>
       <Text
         text={title}
-        className={"flex justify-center text-white my-10 text-5xl"}
+        className={"flex justify-center text-white py-10 text-5xl"}
       />
       <div className={"grid grid-cols-12"}>
         <div className={"col-span-6 mt-10"}>
