@@ -23,13 +23,30 @@ export const ContactBlock: FC<ContactBlockProps> = ({
         className={"col-span-12 flex justify-center text-5xl py-10"}
       />
 
-      <div className={"col-span-6 flex justify-center flex-col items-center"}>
-        <Text text={`telephone: ${telephone}`} className={"text-3xl p-5"} />
-        <Text text={`email: ${email}`} className={"text-3xl p-5"} />
-        <Text text={`Telephone: ${telephone}`} className={"text-3xl p-5"} />
+      <div
+        className={
+          "col-span-12 xl:col-span-6 flex justify-center flex-col items-center text-center pb-10 xl:pb-0"
+        }
+      >
+        <Text
+          text={`telephone: ${telephone}`}
+          className={"text-2xl xl:text-3xl p-2 xl:p-5"}
+        />
+        <Text
+          text={`email: ${email}`}
+          className={"text-2xl xl:text-3xl p-2 xl:p-5"}
+        />
+        <Text
+          text={`Telephone: ${telephone}`}
+          className={"text-2xl xl:text-3xl p-2 xl:p-5"}
+        />
       </div>
 
-      <div className={"col-span-6 flex justify-center items-center py-10"}>
+      <div
+        className={
+          "hidden xl:flex col-span-6 justify-center items-center py-10"
+        }
+      >
         <Image className={"w-1/2 h-auto"} src={imageSrc} alt={"instagram"} />
       </div>
     </div>
