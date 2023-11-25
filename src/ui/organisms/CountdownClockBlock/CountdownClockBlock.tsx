@@ -40,7 +40,7 @@ export const CountdownClockBlock: FC<CountdownClockBlockProps> = ({
             }
           />
           <CountdownClock
-            className={"grid grid-cols-4 gap-20 w-300 xl:w-700"}
+            className={"grid grid-cols-4 gap-20 w-300 xl:w-500"}
             targetDate={new Date("2024-01-01")}
           />
         </div>
