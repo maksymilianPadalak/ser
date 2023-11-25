@@ -6,6 +6,7 @@ import SirCommercialVideo from "@assets/videos/sir-commercial.mp4";
 import { SocialMediaBlock } from "@/ui/organisms/SocialMediaBlock";
 import Sir from "@assets/images/sir.webp";
 import InstagramImage from "@assets/images/instagram.webp";
+import CheeseLogo from "@assets/images/cheese-logo.webp";
 import Replace from "@assets/images/replace.webp";
 import Replace2 from "@assets/images/replace2.webp";
 
@@ -14,6 +15,7 @@ import { CountdownClockBlock } from "@/ui/organisms/CountdownClockBlock/Countdow
 import CheeseLoop from "@assets/videos/cheese-loop.mp4";
 import { HeroBackgroundVideo } from "@/ui/organisms/HeroBackgroundVideo";
 import { TwoImageHero } from "@/ui/organisms/TwoImageHero";
+import { ContactBlock } from "@/ui/organisms/ContactBlock/ContactBlock.tsx";
 
 const App: FC = () => (
   <div>
@@ -33,8 +35,8 @@ const App: FC = () => (
       videoThumbnail={SirWithMouseImage}
     />
     <SocialMediaBlock
-      title={"Pa kurwa"}
-      description={"Instagram kurwa"}
+      title={"Formaty na rozne platformy!"}
+      description={"Youtube, Instagram i Tiktok!"}
       image1={InstagramImage}
       image2={InstagramImage}
       image3={InstagramImage}
@@ -44,6 +46,12 @@ const App: FC = () => (
       image2={Replace2}
       className={"bg-black"}
       title={"Podmień na swoje i gotowe"}
+    />
+    <ContactBlock
+      className={""}
+      email={"antoni.padalak@kurwy.pl"}
+      telephone={"881454647"}
+      imageSrc={CheeseLogo}
     />
     <CountdownClockBlock
       className={"bg-black"}
