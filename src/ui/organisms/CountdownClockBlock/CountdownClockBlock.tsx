@@ -26,7 +26,11 @@ export const CountdownClockBlock: FC<CountdownClockBlockProps> = ({
         <div className={"col-span-6 mt-10"}>
           <Image src={image} alt={"mouse"} />
         </div>
-        <div className={"col-span-6 flex flex-col justify-center items-center"}>
+        <div
+          className={
+            "hidden xl:flex col-span-6 flex-col justify-center items-center"
+          }
+        >
           <Text
             text={clockTitle}
             className={"flex justify-center text-white my-10 text-5xl"}
