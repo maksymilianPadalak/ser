@@ -23,19 +23,26 @@ export const CountdownClockBlock: FC<CountdownClockBlockProps> = ({
         className={"flex justify-center text-white py-10 text-5xl"}
       />
       <div className={"grid grid-cols-12"}>
-        <div className={"col-span-6 mt-10"}>
-          <Image src={image} alt={"mouse"} />
-        </div>
+        <Image
+          className={"col-span-12 xl:col-span-6 mt-10 order-2 xl:order-1"}
+          src={image}
+          alt={"mouse"}
+        />
         <div
           className={
-            "hidden xl:flex col-span-6 flex-col justify-center items-center"
+            "flex col-span-12 xl:col-span-6 flex-col justify-center items-center order-1 xl:order-2"
           }
         >
           <Text
             text={clockTitle}
-            className={"flex justify-center text-white my-10 text-5xl"}
+            className={
+              "flex justify-center text-white text-center my-10 text-3xl xl:text-5xl"
+            }
           />
-          <CountdownClock targetDate={new Date("2024-01-01")} />
+          <CountdownClock
+            className={"grid grid-cols-4 gap-20 w-300 xl:w-700"}
+            targetDate={new Date("2024-01-01")}
+          />
         </div>
       </div>
     </div>
