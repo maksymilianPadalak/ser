@@ -22,7 +22,9 @@ export const TwoImageHero: FC<TwoImageHeroProps> = ({
     <div className={className}>
       <Text
         text={title}
-        className={"text-white flex justify-center py-10 text-3xl xl:text-5xl"}
+        className={
+          "text-white  text-center flex justify-center py-10 text-3xl xl:text-5xl"
+        }
       />
 
       <div className={cx("grid grid-cols-12")}>
