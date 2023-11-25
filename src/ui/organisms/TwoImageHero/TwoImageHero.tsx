@@ -22,12 +22,16 @@ export const TwoImageHero: FC<TwoImageHeroProps> = ({
     <div className={className}>
       <Text
         text={title}
-        className={"text-white flex justify-center py-10 text-5xl"}
+        className={"text-white flex justify-center py-10 text-3xl xl:text-5xl"}
       />
 
       <div className={cx("grid grid-cols-12")}>
         {images.map((imageSrc) => (
-          <div className={"col-span-6 m-10 flex justify-center items-center"}>
+          <div
+            className={
+              "col-span-12 xl:col-span-6 m-10 flex justify-center items-center"
+            }
+          >
             <Image src={imageSrc} alt={"instagram"} />
           </div>
         ))}
