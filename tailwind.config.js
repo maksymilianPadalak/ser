@@ -9,6 +9,7 @@ export default {
       spacing: {
         300: "300px",
         400: "400px",
+        500: "500px",
         700: "700px",
       },
     },

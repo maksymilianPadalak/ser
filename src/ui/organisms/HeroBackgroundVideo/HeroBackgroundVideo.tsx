@@ -13,7 +13,7 @@ export const HeroBackgroundVideo: FC<HeroBackgroundVideoProps> = ({
   videoUrl,
 }) => {
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <div className="relative w-full h-700 overflow-hidden">
       <video autoPlay loop muted className="w-full h-full object-cover">
         <source src={videoUrl} type="video/mp4" />
         Your browser does not support the video tag.
