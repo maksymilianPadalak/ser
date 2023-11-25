@@ -26,12 +26,13 @@ export const SocialMediaBlock: FC<SocialMediaBlockProps> = ({
       <HeadingWithText
         heading={title}
         text={description}
-        textClassName={"text-4xl"}
-        className={"flex justify-center my-5"}
+        headingClassName={"text-5xl xl:text-7xl mb-5"}
+        textClassName={"text-3xl"}
+        className={"flex justify-center my-5 text-center"}
       />
       <div className={"grid grid-cols-12"}>
         {images.map((imageSrc) => (
-          <div className={"col-span-4 m-10"}>
+          <div className={"col-span-12 xl:col-span-4 xl:m-10"}>
             <Image src={imageSrc} alt={"instagram"} />
           </div>
         ))}
