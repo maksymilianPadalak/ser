@@ -21,7 +21,7 @@ export const DetailsBlock: FC<DetailsBlockProps> = ({
     <DetailsSection
       text={description}
       className={"bg-white"}
-      textClassName={"text-3xl text-yellow-400 text-center"}
+      textClassName={"hidden xl:block text-3xl text-yellow-400 text-center"}
     />
   </div>
 );
