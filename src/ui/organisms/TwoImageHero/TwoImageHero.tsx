@@ -23,7 +23,7 @@ export const TwoImageHero: FC<TwoImageHeroProps> = ({
       <Text
         text={title}
         className={
-          "text-white  text-center flex justify-center py-10 text-3xl xl:text-5xl"
+          "text-white text-center flex justify-center py-10 text-3xl xl:text-5xl"
         }
       />
 
