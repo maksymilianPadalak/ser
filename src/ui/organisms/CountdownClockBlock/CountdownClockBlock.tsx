@@ -1,8 +1,9 @@
-import { FC } from "react";
+import { FC, useEffect } from "react";
 import { ComponentWithClassNameProps } from "@/globalTypes";
 import Image from "@/ui/atoms/Image/Image.tsx";
 import { Text } from "@/ui/atoms/Text";
 import { CountdownClock } from "./components/CountdownClock/CountdownClock.tsx";
+import AOS from "aos";
 
 type CountdownClockBlockProps = {
   title: string;
@@ -16,8 +17,16 @@ export const CountdownClockBlock: FC<CountdownClockBlockProps> = ({
   image,
   className,
 }) => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+    });
+  }, []);
+
   return (
-    <div className={className}>
+    <div className={className} data-aos="zoom-out-up" data-aos-offset="500">
       <Text
         text={title}
         className={"flex justify-center text-white py-10 text-5xl"}

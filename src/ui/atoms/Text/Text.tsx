@@ -6,6 +6,8 @@ type TextProps = {
   text: string;
 } & ComponentWithClassNameProps;
 
-export const Text: FC<TextProps> = ({ text, className }) => (
-  <h1 className={cx("font-sans text-black", className)}>{text}</h1>
+export const Text: FC<TextProps> = ({ text, className, ...props }) => (
+  <h1 className={cx("font-sans text-black", className)} {...props}>
+    {text}
+  </h1>
 );

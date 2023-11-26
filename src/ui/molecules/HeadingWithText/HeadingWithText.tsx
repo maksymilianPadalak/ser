@@ -17,8 +17,9 @@ export const HeadingWithText: FC<HeadingWithTextProps> = ({
   headingClassName,
   textClassName,
   className,
+  ...props
 }) => (
-  <div className={cx("flex flex-col items-center", className)}>
+  <div className={cx("flex flex-col items-center", className)} {...props}>
     <Heading text={heading} className={cx(headingClassName)} />
     {text && <Text text={text} className={cx("mt-2 text-2", textClassName)} />}
   </div>
