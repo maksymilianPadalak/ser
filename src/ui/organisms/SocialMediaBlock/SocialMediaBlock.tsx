@@ -35,8 +35,10 @@ export const SocialMediaBlock: FC<SocialMediaBlockProps> = ({
       <HeadingWithText
         heading={title}
         text={description}
-        headingClassName={"text-5xl xl:text-7xl mb-5"}
-        textClassName={"text-3xl"}
+        headingClassName={
+          "text-white text-center flex justify-center py-10 text-3xl xl:text-5xl"
+        }
+        textClassName={"text-3xl text-white"}
         className={"flex justify-center my-5 text-center"}
         data-aos={"fade-up"}
         data-aos-delay={500}

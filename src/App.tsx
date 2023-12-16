@@ -31,29 +31,32 @@ const App: FC = () => (
       videoSrc={SirCommercialVideo}
       videoThumbnail={SirWithMouseImage}
     />
+    <TwoImageHero
+      image1={Replace}
+      image2={Replace2}
+      title={"Podminimy przykładowy ser na Państwa, wyjątkowy ser"}
+    />
     <SocialMediaBlock
-      title={"Formaty na różne platformy!"}
+      className={"bg-black"}
+      title={"Przygotujemy formaty na różne platformy"}
       description={"Youtube, Instagram i Tiktok!"}
       image1={InstagramImage}
       image2={InstagramImage}
       image3={InstagramImage}
     />
-    <TwoImageHero
-      image1={Replace}
-      image2={Replace2}
-      className={"bg-black"}
-      title={"Podmień na swoje i gotowe"}
-    />
     <ContactBlock
-      className={""}
-      email={"antoni.padalak@kurwy.pl"}
-      telephone={"881454647"}
+      title={"Kontakt"}
       imageSrc={CheeseLogo}
+      contactInfo={[
+        { title: "telefon", value: "+48 881 454 647" },
+        { title: "email", value: "antoni.padalak@gmail.com" },
+        { title: "adres", value: "Poznań, ul. Poznańska 24/11" },
+      ]}
     />
     <CountdownClockBlock
       className={"bg-black"}
-      title={"Szybko kurwa"}
-      clockTitle={"Czas do konca kurwa licytacji"}
+      title={"Czekamy na Państwa ser"}
+      clockTitle={"Oferty przyjmujemy jeszcze:"}
       image={Mouse}
     />
   </div>

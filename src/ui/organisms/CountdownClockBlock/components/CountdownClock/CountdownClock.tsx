@@ -3,6 +3,8 @@ import { useCountdown } from "@/hooks/useCountdown";
 import { capitalizeFirstLetter } from "@/utils/capitalizeFirstLetter";
 import { ComponentWithClassNameProps } from "@/globalTypes";
 import { ClockDigitWithLabel } from "../ClockDigitWithLabel/ClockDigitWithLabel.tsx";
+import { TimeUnitsInPolish } from "@/ui/organisms/CountdownClockBlock/components/CountdownClock/constants.ts";
+import { TimeUnits } from "@/ui/organisms/CountdownClockBlock/components/CountdownClock/enums.ts";
 
 export type CountdownClockProps = {
   targetDate: Date;
@@ -20,7 +22,7 @@ export const CountdownClock: FC<CountdownClockProps> = ({
         <ClockDigitWithLabel
           key={index}
           digit={value}
-          label={capitalizeFirstLetter(key)}
+          label={capitalizeFirstLetter(TimeUnitsInPolish[key as TimeUnits])}
         />
       ))}
     </div>
