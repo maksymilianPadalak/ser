@@ -18,7 +18,7 @@ import { TwoImageHero } from "@/ui/organisms/TwoImageHero";
 import { ContactBlock } from "@/ui/organisms/ContactBlock/ContactBlock.tsx";
 
 const App: FC = () => (
-  <div>
+  <div className={"overflow-hidden"}>
     <HeroBackgroundVideo title={"Gotowa reklama sera"} videoUrl={CheeseLoop} />
     <HeroImage
       title={"Państwa ser zasługuje na tytuł szlachecki"}
