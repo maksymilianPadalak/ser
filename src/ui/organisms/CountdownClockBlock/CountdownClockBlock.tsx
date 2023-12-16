@@ -39,7 +39,7 @@ export const CountdownClockBlock: FC<CountdownClockBlockProps> = ({
         />
         <div
           className={
-            "flex col-span-12 xl:col-span-6 flex-col justify-center items-center order-1 xl:order-2"
+            "flex col-span-12 xl:col-span-6 flex-col justify-center items-center order-1 xl:order-2 xl:mr-10"
           }
         >
           <Text
@@ -49,9 +49,7 @@ export const CountdownClockBlock: FC<CountdownClockBlockProps> = ({
             }
           />
           <CountdownClock
-            className={
-              "grid grid-cols-4 gap-20 w-200 xl:w-500 flex justify-center"
-            }
+            className={"grid grid-cols-4 gap-20 w-200 xl:w-500  justify-center"}
             targetDate={new Date("2024-01-01")}
           />
         </div>
