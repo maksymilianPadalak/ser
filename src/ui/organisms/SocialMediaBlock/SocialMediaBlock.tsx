@@ -7,17 +7,13 @@ import AOS from "aos";
 type SocialMediaBlockProps = {
   title: string;
   description: string;
-  image1: string;
-  image2: string;
-  image3: string;
+  image: string;
 } & ComponentWithClassNameProps;
 
 export const SocialMediaBlock: FC<SocialMediaBlockProps> = ({
   title,
   description,
-  image1,
-  image2,
-  image3,
+  image,
   className,
 }) => {
   useEffect(() => {
@@ -27,8 +23,6 @@ export const SocialMediaBlock: FC<SocialMediaBlockProps> = ({
       once: true,
     });
   }, []);
-
-  const images: string[] = [image1, image2, image3];
 
   return (
     <div className={className}>
@@ -43,17 +37,13 @@ export const SocialMediaBlock: FC<SocialMediaBlockProps> = ({
         data-aos={"fade-up"}
         data-aos-delay={500}
       />
-      <div className={"grid grid-cols-12"}>
-        {images.map((imageSrc, index) => (
-          <div
-            key={imageSrc}
-            className={"col-span-12 xl:col-span-4 xl:m-10"}
-            data-aos={"fade-right"}
-            data-aos-delay={200 * index}
-          >
-            <Image src={imageSrc} alt={"instagram"} />
-          </div>
-        ))}
+      <div className={"grid grid-cols-12 pb-10"}>
+        <Image
+          src={image}
+          alt={"instagram"}
+          className={"col-span-12 xl:m-10"}
+          data-aos={"fade-right"}
+        />
       </div>
     </div>
   );

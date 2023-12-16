@@ -5,7 +5,7 @@ import { VideoTextBlock } from "@/ui/organisms/VideoTextBlock";
 import SirCommercialVideo from "@assets/videos/sir-commercial.mp4";
 import { SocialMediaBlock } from "@/ui/organisms/SocialMediaBlock";
 import Sir from "@assets/images/sir.webp";
-import InstagramImage from "@assets/images/instagram.webp";
+import Socials from "@assets/images/socials.webp";
 import CheeseLogo from "@assets/images/cheese-logo.webp";
 import Replace from "@assets/images/replace.webp";
 import Replace2 from "@assets/images/replace2.webp";
@@ -40,9 +40,7 @@ const App: FC = () => (
       className={"bg-black"}
       title={"Przygotujemy formaty na różne platformy"}
       description={"Youtube, Instagram i Tiktok!"}
-      image1={InstagramImage}
-      image2={InstagramImage}
-      image3={InstagramImage}
+      image={Socials}
     />
     <ContactBlock
       title={"Kontakt"}
