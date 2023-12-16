@@ -35,14 +35,12 @@ export const SocialMediaBlock: FC<SocialMediaBlockProps> = ({
         textClassName={"text-3xl text-white"}
         className={"flex justify-center my-5 text-center"}
         data-aos={"fade-up"}
-        data-aos-delay={500}
       />
-      <div className={"grid grid-cols-12 pb-10"}>
+      <div className={"grid grid-cols-12 pb-10"} data-aos={"fade-right"}>
         <Image
           src={image}
           alt={"instagram"}
           className={"col-span-12 xl:m-10"}
-          data-aos={"fade-right"}
         />
       </div>
     </div>
