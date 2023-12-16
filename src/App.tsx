@@ -34,12 +34,12 @@ const App: FC = () => (
     <TwoImageHero
       image1={Replace}
       image2={Replace2}
-      title={"Podminimy przykładowy ser na Państwa, wyjątkowy ser"}
+      title={"Podmienimy przykładowy ser na Państwa, wyjątkowy ser"}
     />
     <SocialMediaBlock
       className={"bg-black"}
       title={"Przygotujemy formaty na różne platformy"}
-      description={"Youtube, Instagram i Tiktok!"}
+      description={"TikTok, Facebook, Instagram"}
       image={Socials}
     />
     <ContactBlock
