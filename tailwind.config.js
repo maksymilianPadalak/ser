@@ -7,6 +7,7 @@ export default {
     },
     extend: {
       spacing: {
+        200: "200px",
         300: "300px",
         400: "400px",
         500: "500px",

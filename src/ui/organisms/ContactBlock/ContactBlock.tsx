@@ -43,7 +43,9 @@ export const ContactBlock: FC<ContactBlockProps> = ({
           return (
             <Text
               text={`${element.title}: ${element.value}`}
-              className={"text-white text-2xl xl:text-3xl p-2 xl:p-5"}
+              className={
+                "text-white text-center text-2xl xl:text-3xl p-2 xl:p-5"
+              }
             />
           );
         })}

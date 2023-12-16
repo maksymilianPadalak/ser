@@ -48,7 +48,6 @@ const App: FC = () => (
       contactInfo={[
         { title: "telefon", value: "+48 881 454 647" },
         { title: "email", value: "antoni.padalak@gmail.com" },
-        { title: "adres", value: "Poznań, ul. Poznańska 24/11" },
       ]}
     />
     <CountdownClockBlock

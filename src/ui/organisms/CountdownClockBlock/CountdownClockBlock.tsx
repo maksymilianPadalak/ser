@@ -49,7 +49,9 @@ export const CountdownClockBlock: FC<CountdownClockBlockProps> = ({
             }
           />
           <CountdownClock
-            className={"grid grid-cols-4 gap-20 w-300 xl:w-500"}
+            className={
+              "grid grid-cols-4 gap-20 w-200 xl:w-500 flex justify-center"
+            }
             targetDate={new Date("2024-01-01")}
           />
         </div>
