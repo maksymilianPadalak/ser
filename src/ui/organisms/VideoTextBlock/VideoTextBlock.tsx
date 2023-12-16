@@ -30,18 +30,13 @@ export const VideoTextBlock: FC<VideoTextBlockProps> = ({
       <div
         className={"flex col-span-12 xl:col-span-6 justify-center items-center"}
         data-aos={"fade-up"}
-        data-aos-offset="500"
       >
         <Text
           text={title}
           className={"text-white text-center text-3xl py-5 xl:text-5xl"}
         />
       </div>
-      <div
-        className={"col-span-12 xl:col-span-6"}
-        data-aos={"zoom-in"}
-        data-aos-offset="500"
-      >
+      <div className={"col-span-12 xl:col-span-6"} data-aos={"zoom-in"}>
         <Video
           src={videoSrc}
           className={"xl:p-10"}

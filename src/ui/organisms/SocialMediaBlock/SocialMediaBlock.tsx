@@ -40,7 +40,6 @@ export const SocialMediaBlock: FC<SocialMediaBlockProps> = ({
         className={"flex justify-center my-5 text-center"}
         data-aos={"fade-up"}
         data-aos-delay={500}
-        data-aos-offset={500}
       />
       <div className={"grid grid-cols-12"}>
         {images.map((imageSrc, index) => (
@@ -49,7 +48,6 @@ export const SocialMediaBlock: FC<SocialMediaBlockProps> = ({
             className={"col-span-12 xl:col-span-4 xl:m-10"}
             data-aos={"fade-right"}
             data-aos-delay={200 * index}
-            data-aos-offset={500}
           >
             <Image src={imageSrc} alt={"instagram"} />
           </div>

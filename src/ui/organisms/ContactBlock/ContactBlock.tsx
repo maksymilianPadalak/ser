@@ -31,7 +31,6 @@ export const ContactBlock: FC<ContactBlockProps> = ({
         text={"Contact us"}
         className={"col-span-12 flex justify-center text-5xl py-10"}
         data-aos="zoom-in-up"
-        data-aos-offset="500"
       />
 
       <div
@@ -39,7 +38,6 @@ export const ContactBlock: FC<ContactBlockProps> = ({
           "col-span-12 xl:col-span-6 flex justify-center flex-col items-center text-center pb-10 xl:pb-0"
         }
         data-aos="zoom-in-up"
-        data-aos-offset="500"
       >
         <Text
           text={`telephone: ${telephone}`}
@@ -60,7 +58,6 @@ export const ContactBlock: FC<ContactBlockProps> = ({
           "hidden xl:flex col-span-6 justify-center items-center py-10"
         }
         data-aos="zoom-in-up"
-        data-aos-offset="500"
       >
         <Image className={"w-1/2 h-auto"} src={imageSrc} alt={"instagram"} />
       </div>

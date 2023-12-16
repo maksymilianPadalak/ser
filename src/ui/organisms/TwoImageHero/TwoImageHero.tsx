@@ -35,7 +35,6 @@ export const TwoImageHero: FC<TwoImageHeroProps> = ({
           "text-white text-center flex justify-center py-10 text-3xl xl:text-5xl"
         }
         data-aos={"fade-up"}
-        data-aos-offset="500"
       />
 
       <div className={cx("grid grid-cols-12")}>
@@ -43,7 +42,6 @@ export const TwoImageHero: FC<TwoImageHeroProps> = ({
           <div
             key={imageSrc}
             data-aos={index % 2 ? "fade-left" : "fade-right"}
-            data-aos-offset="500"
             className={
               "col-span-12 xl:col-span-6 m-10 flex justify-center items-center"
             }

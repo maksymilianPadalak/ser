@@ -26,7 +26,7 @@ export const CountdownClockBlock: FC<CountdownClockBlockProps> = ({
   }, []);
 
   return (
-    <div className={className} data-aos="zoom-out-up" data-aos-offset="500">
+    <div className={className} data-aos="zoom-out-up">
       <Text
         text={title}
         className={"flex justify-center text-white py-10 text-5xl"}
