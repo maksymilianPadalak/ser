@@ -19,23 +19,20 @@ import { ContactBlock } from "@/ui/organisms/ContactBlock/ContactBlock.tsx";
 
 const App: FC = () => (
   <div>
-    <HeroBackgroundVideo
-      title={"Ogarnij se kurwa reklame serka"}
-      videoUrl={CheeseLoop}
-    />
+    <HeroBackgroundVideo title={"Gotowa reklama sera"} videoUrl={CheeseLoop} />
     <HeroImage
-      title={"Twój ser zasługuje na tytuł szlachecki"}
-      description={"To jest kurwa ser"}
+      title={"Państwa ser zasługuje na tytuł szlachecki"}
+      description={"Z przyjemnościa mu go nadamy"}
       imageUrl={Sir}
     />
     <VideoTextBlock
       className={"bg-black"}
-      title={"Reklama sera czeka na Ciebie"}
+      title={"Przygotowaliśmy dla Państwa reklamę sera na wyłączność!"}
       videoSrc={SirCommercialVideo}
       videoThumbnail={SirWithMouseImage}
     />
     <SocialMediaBlock
-      title={"Formaty na rozne platformy!"}
+      title={"Formaty na różne platformy!"}
       description={"Youtube, Instagram i Tiktok!"}
       image1={InstagramImage}
       image2={InstagramImage}
