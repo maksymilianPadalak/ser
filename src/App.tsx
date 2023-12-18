@@ -46,7 +46,7 @@ const App: FC = () => (
       title={"Kontakt"}
       imageSrc={CheeseLogo}
       contactInfo={[
-        { title: "telefon", value: "+48 881 454 647" },
+        { title: "telefon", value: "+48 503 146 678" },
         { title: "email", value: "antoni.padalak@gmail.com" },
       ]}
     />
