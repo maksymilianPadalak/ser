@@ -35,7 +35,7 @@ export const ContactBlock: FC<ContactBlockProps> = ({
 
       <div
         className={
-          "col-span-12 xl:col-span-6 flex flex-col items-center text-start pb-10 xl:pb-0"
+          "col-span-12 xl:col-span-6 flex flex-col items-center justify-center text-start pb-10 xl:pb-0"
         }
         data-aos="zoom-in-up"
       >
