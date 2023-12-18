@@ -47,7 +47,7 @@ const App: FC = () => (
       imageSrc={CheeseLogo}
       contactInfo={[
         { title: "telefon", value: "+48 503 146 678" },
-        { title: "email", value: "antoni.padalak@gmail.com" },
+        { title: "email", value: "sirser.wspolpraca@gmail.com" },
       ]}
     />
     <CountdownClockBlock
