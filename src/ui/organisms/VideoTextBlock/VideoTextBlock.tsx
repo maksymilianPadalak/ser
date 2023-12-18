@@ -33,7 +33,7 @@ export const VideoTextBlock: FC<VideoTextBlockProps> = ({
       >
         <Text
           text={title}
-          className={"text-white text-center text-3xl py-5 xl:text-5xl"}
+          className={"text-white text-center text-3xl p-5 xl:text-5xl"}
         />
       </div>
       <div className={"col-span-12 xl:col-span-6"} data-aos={"zoom-in"}>

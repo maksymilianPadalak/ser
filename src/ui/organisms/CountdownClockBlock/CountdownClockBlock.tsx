@@ -29,7 +29,7 @@ export const CountdownClockBlock: FC<CountdownClockBlockProps> = ({
     <div className={className} data-aos="zoom-out-up">
       <Text
         text={title}
-        className={"flex justify-center text-center text-white py-10 text-5xl"}
+        className={"flex justify-center text-center text-white p-10 text-5xl"}
       />
       <div className={"grid grid-cols-12"}>
         <Image
@@ -50,7 +50,7 @@ export const CountdownClockBlock: FC<CountdownClockBlockProps> = ({
           />
           <CountdownClock
             className={"grid grid-cols-4 gap-20 w-200 xl:w-500  justify-center"}
-            targetDate={new Date("2024-01-01")}
+            targetDate={new Date("2024-01-31")}
           />
         </div>
       </div>

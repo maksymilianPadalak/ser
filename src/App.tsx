@@ -34,7 +34,7 @@ const App: FC = () => (
     <TwoImageHero
       image1={Replace}
       image2={Replace2}
-      title={"Podmienimy przykładowy ser na Państwa, wyjątkowy ser"}
+      title={"Podmienimy przykładowy ser na Państwa wyjątkowy ser"}
     />
     <SocialMediaBlock
       className={"bg-black"}
